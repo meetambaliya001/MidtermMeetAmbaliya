@@ -1,0 +1,19 @@
+<div class="input-container">
+  <img src="..." alt="Input Form Image"> <h2>Enter Employee Information</h2>
+  <form (ngSubmit)="onSubmit()">
+    <label for="name">Employee Name:</label>
+    <input type="text" id="name" name="name" [(ngModel)]="employeeName">
+
+    <fieldset>
+      <legend>Employment Status:</legend>
+      <label><input type="radio" name="status" value="full-time" [(ngModel)]="employmentStatus"> Full-Time</label>
+      <label><input type="radio" name="status" value="part-time" [(ngModel)]="employmentStatus"> Part-Time</label>
+    </fieldset>
+
+    <label>
+      <input type="checkbox" name="certified" [(ngModel)]="isCertified"> Certified
+    </label>
+
+    <button type="submit">Submit</button>
+  </form>
+</div>
