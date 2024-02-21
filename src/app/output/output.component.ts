@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DataService } from '../data.service';
-
+export class outputComponent{ }
 @Component({
   selector: 'app-output',
   templateUrl: './output.component.html',

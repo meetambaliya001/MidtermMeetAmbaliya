@@ -10,17 +10,20 @@ import {InputComponent} from "./input/input.component";
 @NgModule({
   declarations: [
 
-AppComponent
+    AppComponent,outputComponent, InputComponent
 
   ],
   imports: [
     BrowserModule,
     HeaderComponent,
-    OutputComponent,InputComponent,
+
     FooterComponent,
     AppRoutingModule
   ],
   providers: [],
+  exports: [
+    InputComponent
+  ],
   bootstrap: []
 })
 export class AppModule { }

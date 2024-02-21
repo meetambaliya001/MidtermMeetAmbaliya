@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DataService } from '../data.service';
-
+export class InputComponent { }
 @Component({
   selector: 'app-input',
   templateUrl: './input.component.html',
